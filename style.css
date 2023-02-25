@@ -1,5 +1,5 @@
 html, body {
-    background: rgb(30, 30, 30);
+    background: rgb(42, 33, 44);
     background: linear-gradient(120deg, rgba(30, 30, 30, 1) 0%, rgba(20, 20, 20, 1) 100%);
 }
 
@@ -89,7 +89,7 @@ html, body {
 }
 
 a {
-    color: #444;
+    color: #FFFF;
 }
 
 .container:hover .icon {
@@ -103,4 +103,12 @@ a {
 
 .container:hover a {
     color: white;
+}
+img::before{
+    content: "<br>";
+}
+img{
+    width: 4%;
+    height: 4%;
+    cursor: pointer;
 }

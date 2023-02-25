@@ -95,13 +95,21 @@
                     console.log("music already started");
                     return;
                 }
-                at("status_text").innerHTML = "klikS";
+                at("status_text").innerHTML = "click";
                 at("status_text").classList.add("begin");
 
             }, 100);
         });
 
         var temp = 0
+        function discord() {
+  var copyText = document.getElementById("myInput");
+  copyText.hidden = false;
+  copyText.select();
+  document.execCommand("copy");
+  copyText.hidden = true;
+  alert("Copied!");
+}
 
         function animationOver() {
             temp++;
@@ -119,7 +127,7 @@
                     `<div class="textiboi">
                 <a id="typElement"></a></div>
                 <div class="textiboi">
-				<a class="textiboi animated fadeIn"  href="https://discord.com/invite/DjwmU2KfwQ/">Discord</a>
+				<input class="textiboi animated fadeIn" type="text" value="rudy#1672" id="myInput" hidden><img src="discordlogo.png" onclick="discord()">
 				<a class="textiboi animated fadeIn"  href="</a>
                 <a class="textiboi animated fadeIn"  href="a>`;
                 console.log("running typewrite");
@@ -133,8 +141,10 @@
             let strs = [
                 "biggest Polish femboy",
                 "hvh god!!",
-                "",
-                "Best AntiAim System known to humanity",
+                "rudy#1672",
+                "Artemis Beta",
+                "get.good",
+                "invite me to gamesense"
             ]; 
 
             var num = getRandomInt(strs.length);
