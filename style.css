@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(59, 47, 116);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 15%;
+}
+#card1{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    background-color: lightpink;
+}
+#card2{
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+#card1,#card2{
+    background-color: lightpink;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    filter:blur(3px);
+    transition:200ms ease;
+}
+/* #card1::before,#card2::before{
+    filter: drop-shadow(red);
+    filter:blur(0.5rem);
+    transition: 0.5 ease;
+} */
+#card1:hover,#card2:hover{
+    filter:none;
+    transition:500ms ease;
+}
+#card1:focus,#card2:focus{
+    filter:none;
+    transition:500ms ease;
+}
